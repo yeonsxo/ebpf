@@ -6,7 +6,14 @@ eBPF는 Extended Berkeley Packet Filters로, 패킷 필터인 BPF 프로그램�
 
 
 
+<p>
+<style>
+img+em {
+    display: inline-block
+}
+</style>
 <img src="./picture/그림1.png" />  [그림 1]
+</p>
 
 
 
