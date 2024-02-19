@@ -25,6 +25,7 @@ eBPF bytecode는 Kernel Level에서 동작하므로 system 전체에 영향을 �
 eBPF 프로그램의 attachment에는 kprobes, tracepoints, raw tracepoint, fentry/fexit probes 등이 있다. 예를 들면, execve() system call 진입 지점에 부착된 kprobe, do_execve() kernel 함수에 부착된 Kprobe, execve() system call 진입 지점에 위치한 tracepoint 등에 eBPF 프로그램이 연결 된다.
 
 여기서 Kprobe는 Kernel probe라는 기능으로, 커널 코드의 명령에 트랩을 설정하는 것이다.
+
 debugging이나 성능 측정 목적으로 함수를 작성하여 Kprobes에 연결할 수 있는데([그림 3] 참고), 2015년부터 eBPF 프로그램을 Kprobes에 부착할 수 있는 기능이 추가되었다.
 
 Kprobe는 일반적으로 함수 진입 지점에 사용하고, Kretprobes는 함수 종료 지점에 사용하며, 특정 오프셋이 있는 명령에도 사용할 수 있다. Kprobe보다 조금 더 커널 버전 간에 안정적인 tracepoint도 있는데, 이는 커널 코드 내에서 표시된 특정 위치를 나타낸다.
@@ -37,6 +38,7 @@ eBPF 프로그램은 Linux Security Module(LSM) API에도 연결된다. LSM은 �
 
 ### 네트워킹에서의 eBPF
 eBPF 프로그램에서의 반환 코드를 사용하여 커널에게 네트워크 패킷을 처리할 방법(평소처럼 처리, 삭제, redirection 등)을 알려준다. 또, eBPF프로그램이 네트워크 패킷, 소켓 구성 매개변수 등을 수정할 수 있도록 한다.
+
 
 ![그림 4](./picture/그림4.png)
 
