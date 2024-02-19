@@ -6,13 +6,10 @@ eBPF는 Extended Berkeley Packet Filters로, 패킷 필터인 BPF 프로그램�
 
 
 <p>
-<img src="./picture/그림1.png" alt="[그림 1]" />
-<img + em>[그림 1]</em>
+<img src="./picture/그림1.png" alt="[그림 1]" + em [그림 1] <em/> />
+<em>[그림 1]</em>
 </p>
 
-img + em {
-    display: inline-block;
-}
 
 [그림 1]과 같이 eBPF 프로그램은 filesystem과 network에 적용되어 악성 코드의 실행을 막는 등의 보안 측면은 물론이고 분석, monitoring, 추적, redirection, debugging 등에서도 다양하게 활용될 수 있다.
 
