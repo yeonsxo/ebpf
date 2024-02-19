@@ -5,10 +5,10 @@ eBPF는 Extended Berkeley Packet Filters로, 패킷 필터인 BPF 프로그램�
 기존 BPF와의 차이점은 eBPF 맵을 이용해 사용자 공간 app과 BPF 프로그램이 데이터를 공유할 수 있고, 더 많은 종류의 bpf helper function과 bpf() 시스템 호출을 활용하여 프로그램을 구성할 수 있으며, ebpf verifier가 추가되어 프로그램이 더 안전하게 실행될 수 있도록 보장한다.
 
 
-
+</p> ![그림 1](./picture/그림1.png) [그림 1] </p>
 
 </p>
-<img src = https://gitlab.somansa.com/dustj707/ebpf/-/blob/main/picture/%EA%B7%B8%EB%A6%BC1.png> 그림 1
+<img src = ./picture/그림1.png> [그림 1]
 </p>
 
 [그림 1]과 같이 eBPF 프로그램은 filesystem과 network에 적용되어 악성 코드의 실행을 막는 등의 보안 측면은 물론이고 분석, monitoring, 추적, redirection, debugging 등에서도 다양하게 활용될 수 있다.
