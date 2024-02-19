@@ -6,9 +6,7 @@ eBPF는 Extended Berkeley Packet Filters로, 패킷 필터인 BPF 프로그램�
 
 
 
-![그림 1](./picture/그림1.png)
-
-[그림 1]
+![그림 1](./picture/그림1.png) [그림 1]
 
 [그림 1]과 같이 eBPF 프로그램은 filesystem과 network에 적용되어 악성 코드의 실행을 막는 등의 보안 측면은 물론이고 분석, monitoring, 추적, redirection, debugging 등에서도 다양하게 활용될 수 있다.
 
@@ -22,7 +20,7 @@ eBPF bytecode는 Kernel Level에서 동작하므로 system 전체에 영향을 �
 
 ## 구조
 
-![그림 3](./picture/그림3.png)
+![그림 3](./picture/그림3.png) [그림 3]
 
 eBPF 프로그램의 attachment에는 kprobes, tracepoints, raw tracepoint, fentry/fexit probes 등이 있다.
 
@@ -44,7 +42,7 @@ eBPF 프로그램은 Linux Security Module(LSM) API에도 연결된다. LSM은 �
 eBPF 프로그램에서의 반환 코드를 사용하여 커널에게 네트워크 패킷을 처리할 방법(평소처럼 처리, 삭제, redirection 등)을 알려준다. 또, eBPF프로그램이 네트워크 패킷, 소켓 구성 매개변수 등을 수정할 수 있도록 한다.
 
 
-![그림 4](./picture/그림4.png)
+![그림 4](./picture/그림4.png) [그림 4]
 
 [그림 4]를 참고해보면, eBPF 프로그램이 Kprobes에 부착할 수 있는 기능이 추가되며 동시에 커널 네트워킹 스택 내에 훅이 추가되어 eBPF 프로그램이 네트워킹 기능의 다양한 측면도 처리할 수 있게 되었다.
 
