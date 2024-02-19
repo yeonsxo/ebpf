@@ -1,6 +1,4 @@
-# eBPF 개념과 구조
-
-## eBPF란 ?
+# eBPF란 ?
 eBPF는 Extended Berkeley Packet Filters로, 패킷 필터인 BPF 프로그램이 확장된 것이다. BPF는 Unix계열 OS의 Kernel Level에서 Bytecode에 따라 동작하는 경량화된 VM이다. eBPF를 사용하면 프로그램이 커널 수준에서 발생하는 모든 것을 관찰하고 이벤트를 고속으로 처리할 수 있으므로 보안에 적절하게 사용된다.
 
 
@@ -8,6 +6,7 @@ eBPF는 Extended Berkeley Packet Filters로, 패킷 필터인 BPF 프로그램�
 
 
   [그림 1]
+> 으히히
 [그림 1]과 같이 eBPF 프로그램은 filesystem과 network에 적용되어 악성 코드의 실행을 막는 등의 보안 측면은 물론이고 분석, monitoring, 추적, redirection, debugging 등에서도 다양하게 활용될 수 있다.
  [그림 2]
 [그림 2]를 참고해보자. eBPF 프로그램은 C 또는 Rust를 이용해 소스 코드를 작성하게 되고(최근에는 go로도 작성되는 것 같다), LLVM 이나 Clang을 이용해 bytecode로 compile된다.
