@@ -22,7 +22,9 @@ eBPF bytecode는 Kernel Level에서 동작하므로 system 전체에 영향을 �
 
 ![그림 3](./picture/그림3.png)
 
-eBPF 프로그램의 attachment에는 kprobes, tracepoints, raw tracepoint, fentry/fexit probes 등이 있다. 예를 들면, execve() system call 진입 지점에 부착된 kprobe, do_execve() kernel 함수에 부착된 Kprobe, execve() system call 진입 지점에 위치한 tracepoint 등에 eBPF 프로그램이 연결 된다.
+eBPF 프로그램의 attachment에는 kprobes, tracepoints, raw tracepoint, fentry/fexit probes 등이 있다.
+
+예를 들면, execve() system call 진입 지점에 부착된 kprobe, do_execve() kernel 함수에 부착된 Kprobe, execve() system call 진입 지점에 위치한 tracepoint 등에 eBPF 프로그램이 연결 된다.
 
 여기서 Kprobe는 Kernel probe라는 기능으로, 커널 코드의 명령에 트랩을 설정하는 것이다.
 
@@ -42,4 +44,6 @@ eBPF 프로그램에서의 반환 코드를 사용하여 커널에게 네트워�
 
 ![그림 4](./picture/그림4.png)
 
-[그림 4]를 참고해보면, eBPF 프로그램이 Kprobes에 부착할 수 있는 기능이 추가되며 동시에 커널 네트워킹 스택 내에 훅이 추가되어 eBPF 프로그램이 네트워킹 기능의 다양한 측면도 처리할 수 있게 되었다. XDP는 리눅스 커널에서 high-performance programmable packet processing을 가능케 하는 BPF 프레임워크를 제공한다. 이는 네트워크 드라이버가 패킷을 수신하는 순간(소프트웨어에서 가장 빠른 시점), BPF 프로그램을 실행한다.
+[그림 4]를 참고해보면, eBPF 프로그램이 Kprobes에 부착할 수 있는 기능이 추가되며 동시에 커널 네트워킹 스택 내에 훅이 추가되어 eBPF 프로그램이 네트워킹 기능의 다양한 측면도 처리할 수 있게 되었다.
+
+XDP는 리눅스 커널에서 high-performance programmable packet processing을 가능케 하는 BPF 프레임워크를 제공한다. 이는 네트워크 드라이버가 패킷을 수신하는 순간(소프트웨어에서 가장 빠른 시점), BPF 프로그램을 실행한다.
