@@ -12,6 +12,7 @@ eBPF는 Extended Berkeley Packet Filters로, 패킷 필터인 BPF 프로그램�
 
 
 ![그림 2](./picture/그림2.png)
+
 [그림 2]를 참고해보자. eBPF 프로그램은 C 또는 Rust를 이용해 소스 코드를 작성하게 되고(최근에는 go로도 작성되는 것 같다), LLVM 이나 Clang을 이용해 bytecode로 compile된다.
 eBPF bytecode는 Kernel Level에서 동작하므로 system 전체에 영향을 줄 수 있는 위험한 상황을 방지하기 위해 Verifier로 이상이 없는지 검사를 진행한다. 그 후, JIT Compiler를 통해 native code로 변환되어 Kernel에서 동작한다.
 
@@ -24,6 +25,8 @@ debugging이나 성능 측정 목적으로 함수를 작성하여 Kprobes에 연
 Kprobe는 일반적으로 함수 진입 지점에 사용하고, Kretprobes는 함수 종료 지점에 사용하며, 특정 오프셋이 있는 명령에도 사용할 수 있다. Kprobe보다 조금 더 커널 버전 간에 안정적인 tracepoint도 있는데, 이는 커널 코드 내에서 표시된 특정 위치를 나타낸다.
 Fentry는 Kprobe와 같이 함수 진입 지점에 사용되고, Fexit은 Kretprobe와 같이 함수 종료 지점에 사용되지만 Fexit은 Kreprobe와 달리 함수의 입력 매개변수에 엑세스할 수 있어 함수의 끝에서 이벤트를 생성하려는 경우 유용하게 사용할 수 있다.
 eBPF 프로그램은 Linux Security Module(LSM) API에도 연결된다. LSM은 원래 커널 모듈이 보안 정책을 시행하는 데 사용하도록 고안된 커널 내의 안정된 인터페이스인데, 이를 이용해 여러 면에서 추적 프로그램처럼 처리한다.
+
+
 
 네트워킹에서의 eBPF
 eBPF 프로그램에서의 반환 코드를 사용하여 커널에게 네트워크 패킷을 처리할 방법(평소처럼 처리, 삭제, redirection 등)을 알려준다. 또, eBPF프로그램이 네트워크 패킷, 소켓 구성 매개변수 등을 수정할 수 있도록 한다.
