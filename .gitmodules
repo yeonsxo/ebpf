@@ -1,0 +1,3 @@
+[submodule "Project-eBPF/cilium/cilium"]
+	path = Project-eBPF/cilium/cilium
+	url = https://github.com/cilium/ebpf.git
