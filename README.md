@@ -77,6 +77,10 @@ $ sudo apt-get install -y bpfcc-tools
 $ sudo apt-get install -y python3-pip
 ```
 
+eBPF의 trace 출력을 확인하는 방법은 아래와 같다.
+- cat /sys/kernel/debug/tracing/trace_pipe
+- bpftool prog tracelog (bpftool은 sudo를 사용한다.)
+
 
 
 # 개발 & 테스트 관련 유의 사항
