@@ -4,3 +4,9 @@
 [submodule "Project-eBPF/cilium-ebpf"]
 	path = Project-eBPF/cilium-ebpf
 	url = https://github.com/cilium/ebpf.git
+[submodule "Project-eBPF/ebpf-firewall"]
+	path = Project-eBPF/ebpf-firewall
+	url = https://github.com/nikofil/ebpf-firewall.git
+[submodule "Project-eBPF/pulsar"]
+	path = Project-eBPF/pulsar
+	url = https://github.com/exein-io/pulsar.git
