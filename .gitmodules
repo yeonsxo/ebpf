@@ -16,3 +16,6 @@
 [submodule "Project-eBPF/lsmtrace/lsmtrace"]
 	path = Project-eBPF/lsmtrace/lsmtrace
 	url = https://github.com/lumontec/lsmtrace.git
+[submodule "Project-eBPF/merbridge/merbridge"]
+	path = Project-eBPF/merbridge/merbridge
+	url = https://github.com/merbridge/merbridge.git
