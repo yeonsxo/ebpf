@@ -10,3 +10,6 @@
 [submodule "Project-eBPF/elastic"]
 	path = Project-eBPF/elastic
 	url = https://github.com/elastic/ebpf.git
+[submodule "Project-eBPF/ebpfguard"]
+	path = Project-eBPF/ebpfguard
+	url = https://github.com/deepfence/ebpfguard.git
