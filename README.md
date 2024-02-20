@@ -60,3 +60,17 @@ eBPF프로그램을 작성하고 C 기반의 예제들을 build하려면 라이�
 
 
 ### bpftool [![bpftool build](https://github.com/libbpf/bpftool/actions/workflows/build.yaml/badge.svg)](https://https://github.com/libbpf/bpftool)
+
+libbpf와 마찬가지로 eBPF프로그램을 작성할 때 필요한 tool이다.
+위 버튼 클릭 후 진행한다.
+
+
+### etc
+```bash
+$ sudo apt-get update
+$ sudo apt-get install -y apt-transport-https ca-certificates curl clang llvm jq
+$ sudo apt-get install -y libelf-dev libcap-dev libbfd-dev binutils-dev build-essential make 
+$ sudo apt-get install -y linux-tools-common linux-tools-$(uname -r) 
+$ sudo apt-get install -y bpfcc-tools
+$ sudo apt-get install -y python3-pip
+```
