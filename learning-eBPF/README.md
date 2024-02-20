@@ -1,8 +1,8 @@
 <img src="../.picture/learning-ebpf-cover.png" height=500 />
 
 > learning-eBPF는 eBPF를 자세하고 쉽게 이해하기 좋은 교재로, 저자는 Liz Rice이다. (published by O'Reilly)
-
-
+>
+>
 > 이 책의 저자는 Ubuntu 22.04, kernel version 5.15를 사용하여 예제들을 테스트 했다고 한다.
 
     > 다른 배포판이나 커널 버전을 사용하는 경우 여러 패키지와 종속성 간의 호환성 문제를 해결해야 한다.
