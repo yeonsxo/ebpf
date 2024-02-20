@@ -19,3 +19,6 @@
 [submodule "Project-eBPF/merbridge/merbridge"]
 	path = Project-eBPF/merbridge/merbridge
 	url = https://github.com/merbridge/merbridge.git
+[submodule "Project-eBPF/merbridge/envoy"]
+	path = Project-eBPF/merbridge/envoy
+	url = https://github.com/envoyproxy/envoy.git
