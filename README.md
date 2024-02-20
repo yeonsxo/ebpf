@@ -82,5 +82,7 @@ $ sudo apt-get install -y python3-pip
 # 개발 & 테스트 관련 유의 사항
 
 - 사용자 공간과 커널 공간 사이에서의 테이터 공유는 map을 이용해야 한다.
+
 - bpftool feature 명령으로 커널 버전별로 사용 가능한 각 프로그램 유형에 대한 helper function 목록을 확인할 수 있다.
+
      (BPF 서브 시스템이 계속 개발중이므로 불완전할 수 있음.)
