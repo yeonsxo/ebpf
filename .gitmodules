@@ -7,3 +7,6 @@
 [submodule "Project-eBPF/pulsar/pulsar"]
 	path = Project-eBPF/pulsar/pulsar
 	url = https://github.com/exein-io/pulsar.git
+[submodule "Project-eBPF/elastic/elastic"]
+	path = Project-eBPF/elastic/elastic
+	url = https://github.com/elastic/ebpf.git
