@@ -1,3 +1,6 @@
 [submodule "Project-eBPF/cilium/cilium"]
 	path = Project-eBPF/cilium/cilium
 	url = https://github.com/cilium/ebpf.git
+[submodule "Project-eBPF/ebpf-firewall/ebpf-firewall"]
+	path = Project-eBPF/ebpf-firewall/ebpf-firewall
+	url = https://github.com/nikofil/ebpf-firewall.git
