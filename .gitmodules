@@ -28,3 +28,6 @@
 [submodule "bpftool"]
 	path = bpftool
 	url = https://github.com/libbpf/bpftool.git
+[submodule "learning-eBPF/learning-ebpf"]
+	path = learning-eBPF/learning-ebpf
+	url = https://github.com/lizrice/learning-ebpf.git
