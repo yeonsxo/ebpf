@@ -7,3 +7,6 @@
 [submodule "Project-eBPF/cilium"]
 	path = Project-eBPF/cilium
 	url = https://github.com/cilium/ebpf.git
+[submodule "Project-eBPF/elastic"]
+	path = Project-eBPF/elastic
+	url = https://github.com/elastic/ebpf.git
