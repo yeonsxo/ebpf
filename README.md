@@ -53,5 +53,5 @@ XDP는 리눅스 커널에서 high-performance programmable packet processing을
 
 # Build
 
-### Libbpf [![Github Actions Builds](https://github.com/libbpf/libbpf/badge.svg)](https://github.com/libbpf/libbpf)
+### Libbpf [![](https://github.com/libbpf/libbpf/badge.svg)](https://github.com/libbpf/libbpf)
 
