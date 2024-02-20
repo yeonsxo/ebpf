@@ -4,7 +4,7 @@
 
 
 
-###### 위 교재를 참고하여 eBPF를 접한다. chapter별로 간략하게 소개를 하자면,
+##### 위 교재를 참고하여 eBPF를 접한다. chapter별로 간략하게 소개를 하자면,
 
     chapter1 : What Is eBPF, and Why Is It Important?
     > 히히
