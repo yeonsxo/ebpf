@@ -22,3 +22,6 @@
 [submodule "Project-eBPF/merbridge/envoy"]
 	path = Project-eBPF/merbridge/envoy
 	url = https://github.com/envoyproxy/envoy.git
+[submodule "libbpf"]
+	path = libbpf
+	url = https://github.com/libbpf/libbpf.git
