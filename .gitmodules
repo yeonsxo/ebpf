@@ -13,3 +13,6 @@
 [submodule "Project-eBPF/ebpfguard/ebpfguard"]
 	path = Project-eBPF/ebpfguard/ebpfguard
 	url = https://github.com/deepfence/ebpfguard.git
+[submodule "Project-eBPF/lsmtrace/lsmtrace"]
+	path = Project-eBPF/lsmtrace/lsmtrace
+	url = https://github.com/lumontec/lsmtrace.git
