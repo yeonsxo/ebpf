@@ -11,7 +11,7 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 ## 개발 과정
 
 첫 번째로, inode값을 이용해 return EPERM을 하는 과정이다.
-<img src="../../../.picture/lsmtrace-eperm-개발과정.png" />
+<img src="../../../.picture/lsmtrace-eperm-개발과정.png" height=500 />
 
 사진에서 윗 부분은 lsmtrace를 실행했을 때 해당 디렉토리에 관련한 정보이다.
 
