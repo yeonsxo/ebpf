@@ -13,12 +13,12 @@
 
 
 ## Filesystem Monitor 출력 화면
-<img src="../.picture/ys-open-close-출력화면.png"/>
+<img src="../.picture/ys-open-close-출력화면.png" height=5=700 />
 
 
 
 ## Process Monitor 출력 화면
-<img src="../.picture/ys-execve-출력화면.PNG"/>
+<img src="../.picture/ys-execve-출력화면.PNG" />
 
 
 
@@ -28,4 +28,4 @@
 $ sudo bpftool prog list
 ```
 
-<img src="../.picture/ys-bpftool-prog-list-출력화면.png" height=400/>
+<img src="../.picture/ys-bpftool-prog-list-출력화면.png" height=400 />
