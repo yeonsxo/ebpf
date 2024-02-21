@@ -16,7 +16,7 @@
 
 - Chapter1 : What Is eBPF, and Why Is It Important?
 
--> eBPF가 무엇인지, 어떻게 구성되어 있는지와 eBPF의 발전, 특징들을 설명한다.
+   eBPF가 무엇인지, 어떻게 구성되어 있는지와 eBPF의 발전, 특징들을 설명한다.
 
 - Chapter2 : eBPF’s “Hello World”
 
