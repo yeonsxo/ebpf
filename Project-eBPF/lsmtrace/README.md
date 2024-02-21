@@ -7,7 +7,6 @@ Lsmtrace는 lsm 훅을 eBPF 프로그램을 통해 추적합니다.
 lsmtrace를 사용하려면 BPF_SYSCALL, BPF_LSM, DEBUG_INFO, DEBUG_INFO_BTF이 활성화 되어 있어야 한다.
 
 
-
 ## Run
 
 ```
@@ -24,3 +23,8 @@ Attaching hooks, don`t rush..
 ...
 ```
 
+
+### etc
+
+lsm hook eBPF 프로그램 테스트 관련해, deepfence/ebpfguard도 lsm hook을 이용한다.
+> deepfence/ebpfguard는 Rust로 작성된 eBPF 프로그램이다.
