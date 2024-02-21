@@ -6,6 +6,11 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 > 특정 디렉토리를 지정해줄 때는, inode값을 이용하는 방법 하나와 directory 이름을 이용하는 방법 하나로 두가지 방법을 이용했다.
 
 
+
+## 개발 과정
+
+<img src="../../../.picture/lsmtrace-eperm-개발과정.png" />
+
 ## 테스트
 
 /home/shinys/test 디렉토리를 지우는 것으로 테스트를 진행했다.
