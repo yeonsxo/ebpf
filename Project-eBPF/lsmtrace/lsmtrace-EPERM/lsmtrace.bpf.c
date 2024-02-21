@@ -584,7 +584,7 @@ int BPF_PROG(inode_rmdir, struct inode *inode_dir, struct dentry *dentry)
 	FILTER_OWN_PID_INT()
 	DUMP_FUNC(inode_rmdir, struct inode *dir, struct dentry *dentry)
 
-	if(dentry->d_inode->i_ino == 1053326) { // target directory inode
+	if(dentry->d_inode->i_ino == 1053326) { // target directory inode (특정 디렉토리의 inode값 확인 후 바꿔주어야 한다.)
 		
 		return -EPERM;
 	}
