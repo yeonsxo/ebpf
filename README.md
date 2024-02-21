@@ -95,3 +95,5 @@ $ sudo apt-get install -y python3-pip
 
 
 - 검증기 오류가 생각보다 많이 발생하므로, eBPF 프로그램의 특성을 잘 파악하고 learning-eBPF chapter9를 참고하는 것이 도움이 된다.
+    
+    > Filesystem Monitor를 개발할 때 target directory 설정 부분을 전역 변수로 두어야 검증기 오류가 나지 않는 것을 확인할 수 있었다. 구체적인 이유는 파악하지 못하였지만, eBPF 특성 중 map에 관련되어 있는 듯 하다.
