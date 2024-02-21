@@ -13,6 +13,8 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 $ rm -rf test
 ```
 위 명령 실행 시,
+
+
 <img src="../../../.picture/lsmtrace-eperm-출력화면.png" />
 
 이렇게 출력되는 것을 확인할 수 있고, permission denied가 잘 되는 것도 확인할 수 있었다.
