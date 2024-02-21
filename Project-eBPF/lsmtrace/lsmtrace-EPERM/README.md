@@ -29,7 +29,7 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 두 번째로, path를 이용해 return EPERM을 하는 과정이다.
 <img src="../../../.picture/lsmtrace-eperm-개발과정2.png" />
 
-사진을 참고하면, 해당 디렉토리의 path는 test임을 알 수 있다.
+사진은 lsmtrace를 실행했을 때 해당 디렉토리에 관련한 정보이다. 사진을 참고하면, 해당 디렉토리의 path는 test임을 알 수 있다.
 
 
 해당 디렉토리의 path를 특정한 후, 현재의 path와 비교하여 현재 path가 test 라면 return EPERM을 하도록 코드에 추가해주었다.
