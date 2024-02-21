@@ -42,6 +42,6 @@ $ rm -rf test
 위 명령 실행 시, (lsmtrace의 원래 코드를 이용하려면 사진에서와 같이 입력해야 한다.)
 
 
-<img src="../../../.picture/lsmtrace-eperm-출력화면.png" Width=1500/>
+<img src="../../../.picture/lsmtrace-eperm-출력화면.png" Width=500/>
 
 이렇게 출력되는 것을 확인할 수 있고, permission denied가 잘 되는 것도 확인할 수 있었다.
