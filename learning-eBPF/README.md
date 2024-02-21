@@ -21,13 +21,13 @@
     - C언어와 python을 통해 eBPF 프로그램의 간단한 예제를 작성한다.
 
     chapter3 : Anatomy of an eBPF Program
-    - 호호
+    - C언어로 작성되어 있는 XDP 예제를 통해 소스 코드가 어떻게 eBPF bytecode로 변환되는지 살펴본다.
 
     chapter4 : The bpf() System Call
-    - 하하
+    - eBPF를 사용할 때 system call 수준에서 무엇이 일어나는지 설명하기 위한 BCC framework를 이용한 예제들이 있다.
 
     chapter5 : CO-RE, BTF, and Libbpf
-    - 후후
+    - CO-RE, BTF에 대한 설명과 eBPF 프로그램을 로드하고 관리하기 위한 C 기반 라이브러리인 libbpf에 대한 설명과 libbpf를 기반으로 한 C 예제 코드들이 있다.
 
     chapter6 : The eBPF Verifier
     - 흐흐
