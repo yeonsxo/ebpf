@@ -11,5 +11,10 @@ cilium 에서 제공하는 eBPF 프로그램의 예제에는,
 >
 >ringbuffer - BPF_MAP_TYPE_RINGBUF 맵을 사용한다.
 >
+>Uprobe - 임의의 사용자 공간 이진 함수의 진입 또는 종료에 프로그램을 연결한다.
 >
+>uretprobe - bpf2go를 이용한 uretprobe 예제
+>
+>Tracepoint - 
+>tracepoint_in_c = bpf2go를 사용한 tracepoint 예제
 
