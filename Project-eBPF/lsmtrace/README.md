@@ -26,5 +26,5 @@ Attaching hooks, don`t rush..
 
 ### etc
 
-lsm hook eBPF 프로그램 테스트 관련해, deepfence/ebpfguard도 lsm hook을 이용한다.
+lsm hook eBPF 프로그램 테스트 관련해, [deepfence/ebpfguard](https://github.com/deepfence/ebpfguard)도 lsm hook을 이용한다.
 > deepfence/ebpfguard는 Rust로 작성된 eBPF 프로그램이다.
