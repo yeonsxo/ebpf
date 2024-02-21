@@ -17,3 +17,11 @@ directory path를 비교하여 /home/shinys 디렉토리에서 파일이 생성�
 ## 테스트
 
 <img src="../../../.picture/elastic-sigkill-출력화면.png" height=530/>
+
+
+
+## etc
+
+SigKill 호출할 때, process 자체를 전부 종료시키는 명령이라 조금 위험할 수 있는 것 같다.
+
+개발할 때 SigKill 호출하고 ubuntu 자체가 종료되거나 reboot 되는 등의 어려움을 겪었다. (주석 처리하고 다른 방법으로 log를 확인함.)
