@@ -9,6 +9,10 @@
 
 
 
+> 두 번째는, Process Monitor로 프로세스 추적 프로그램이다.
+
+
+
 # Filesystem Monitor 출력
 <img src="../.picture/ys-open-close-출력화면.png"/>
 
