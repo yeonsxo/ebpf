@@ -97,4 +97,10 @@ $ sudo apt-get install -y python3-pip
     > Filesystem Monitor를 개발할 때 target directory 설정 부분을 전역 변수로 두어야 검증기 오류가 나지 않는 것을 확인할 수 있었다. 구체적인 이유는 파악하지 못하였지만, eBPF 특성 중 map에 관련되어 있는 듯 하다.
 
 
-- 
+- eBPF 프로그램은 기본적으로 스택의 크기가 512바이트로 제한되어 있다.
+> 맵을 힙처럼 사용하라는 가이드가 있다.
+>
+> https://github.com/iovisor/bpftrace/blob/master/docs/internals_development.md#stack-limit-exceeded 을 참고하면, 스택에 큰 변수가 있을 경우 BPF_MAP_TYPE_PERCPU_ARRAY 맵을 사용하라고 한다.
+>
+>> BPF_MAP_TYPE_PERCPU_ARRAY 맵은 기본적인 BPF_MAP_TYPE_ARRAY 맵과 달리 각 CPU 코어에 대해 별도의 메모리 공간을 가지고 있어 각 CPU는 자체 메모리를 사용하여 독립적으로 값을 읽거나 쓸 수 있다. 따라서 eBPF 프로그램은 512 바이트 제한을 초과하지 않고도 큰 변수를 다룰 수 있다.
+>
