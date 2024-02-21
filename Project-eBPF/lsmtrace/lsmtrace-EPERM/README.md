@@ -16,7 +16,7 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 사진에서 윗 부분은 lsmtrace를 실행했을 때 해당 디렉토리에 관련한 정보이다.
 
 아랫 부분은
-``` $ ls -il ```
+`` $ ls -il ``
 을 이용해 해당 디렉토리의 inode값을 확인한 것이다.
 
 
