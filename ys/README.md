@@ -15,6 +15,10 @@
 ## Filesystem Monitor 출력 화면
 <img src="../.picture/ys-open-close-출력화면.png" height=500 />
 
+사진을 보면 순서대로 사용자, 파일 경로, command, message이다.
+
+특정 디렉토리 내에서 gedit을 통해 파일을 열었을 때 file open에 관련한 정보들이 잘 나오는 것을 확인할 수 있다.
+
 
 
 ## Process Monitor 출력 화면
