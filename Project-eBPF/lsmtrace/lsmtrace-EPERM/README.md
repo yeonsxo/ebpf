@@ -23,6 +23,9 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 
 
 
+
+
+
 두 번째로, path를 이용해 return EPERM을 하는 과정이다.
 <img src="../../../.picture/lsmtrace-eperm-개발과정2.png" />
 
