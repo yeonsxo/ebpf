@@ -20,8 +20,8 @@
     Chapter2 : eBPF’s “Hello World”
     - C언어와 python을 통해 eBPF 프로그램의 간단한 예제를 작성한다.
     > ```
-    #!/usr/bin/python3  
-from bcc import BPF
+    >#!/usr/bin/python3  
+    >from bcc import BPF
 
 program = r"""
 int hello(void *ctx) {
@@ -35,7 +35,7 @@ syscall = b.get_syscall_fnname("execve")
 b.attach_kprobe(event=syscall, fn_name="hello")
 
 b.trace_print()
-```
+
 
 
 
