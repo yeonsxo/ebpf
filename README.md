@@ -93,4 +93,4 @@ $ sudo apt-get install -y python3-pip
 
     > (BPF 서브 시스템이 계속 개발중이므로 불완전할 수 있다. 따라서 각 project별로 libbpf와 bpftool 등의 버전을 확인해야 한다.)
 
-- 
+- 검증기 오류가 생각보다 많이 발생한다. eBPF 프로그램의 특성을 잘 파악하고 learning-eBPF chapter9를 참고하는 것이 도움이 된다.
