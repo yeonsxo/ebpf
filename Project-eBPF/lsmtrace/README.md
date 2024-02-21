@@ -1,4 +1,4 @@
-## Lsmtrace
+# Lsmtrace
 
 LSM은 Linux Security Module로, 리눅스 커널에서 제공하는 보안 Framework로 커널 수준에서 보안 정책을 적용하는 데 사용된다. (LSM은 리눅스 커널 2.6 버전 이후로 기본 커널에 통합되었다.)
 
