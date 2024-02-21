@@ -39,10 +39,10 @@
     - 네트워크 스택의 다양한 지점에 부착되는 eBPF 프로그램 예제들이 있다. (XDP 프로그램, TC 서브시스템, Kubernetes Networking 등을 소개한다.)
 
     Chapter9 : eBPF for Security
-    - 
+    - LSM(Linux Security Module) 훅 지점에 eBPF를 연결하는 등의 보안 측면에서의 eBPF 프로그램을 소개한다.
 
     Chapter10 : eBPF Programming
-    - 
+    - 다양한 언어들에 대한 라이브러리 등을 소개한다. (eBPF 프로그램은 C 기반으로만 작성되는 것 아니기 때문)
 
     Chapter11 : The Future Evolution of eBPF
     - eBPF의 앞으로의 발전에 대해 소개한다.
