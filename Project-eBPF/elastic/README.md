@@ -9,7 +9,6 @@ elastic/ebpf 에는 File, Process, Network 관련해 추적하는 eBPF 프로그
 ```
 $ sudo ./EventsTrace --net-conn-attempt
 ```
-
 <img src="../../.picture/elastic--net-conn-attempt-출력화면.PNG" />
 
 
