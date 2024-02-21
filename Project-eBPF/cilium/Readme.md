@@ -32,6 +32,6 @@ cilium 에서 제공하는 eBPF 프로그램의 예제에는,
 ## Run
 
 ```
-cd ebpf/examples/
-go run -exec sudo [./kprobe, ./uretprobe, ./ringbuffer, ...]
+$ cd ebpf/examples/
+$ go run -exec sudo [./kprobe, ./uretprobe, ./ringbuffer, ...]
 ```
