@@ -1,4 +1,5 @@
 lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원래 코드에서 수정한 코드이다.
+(rmdir 부분에 코드를 추가하였다.)
 
 
 
