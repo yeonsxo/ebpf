@@ -27,7 +27,9 @@ cilium 에서 제공하는 eBPF 프로그램의 예제에는,
 
 - XDP : 네트워크 인터페이스에 eBPF 프로그램을 연결하여 들어오는 패킷을 처리한다.
 
+### bpf2go
 
+eBPF 프로그램을 load, compile, debugging 할 수 있게 해주는 Go 라이브러리 이다.
 
 ## Run
 
