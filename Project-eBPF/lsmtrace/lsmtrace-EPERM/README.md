@@ -11,6 +11,15 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 
 <img src="../../../.picture/lsmtrace-eperm-개발과정.png" />
 
+사진에서 윗 부분은 lsmtrace를 실행했을 때 해당 디렉토리에 관련한 정보이다.
+
+아랫 부분은
+``` $ ls -il ```
+을 이용해 해당 디렉토리의 inode값을 확인한 것이다.
+
+
+두 화면에서 해당 디렉토리의 inode값을 특정할 수 있다. 이 inode값을 이용하여 코드에 추가해주었다.
+
 ## 테스트
 
 /home/shinys/test 디렉토리를 지우는 것으로 테스트를 진행했다.
