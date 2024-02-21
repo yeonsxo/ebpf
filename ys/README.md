@@ -7,4 +7,4 @@
 
 
 ## Process Monitor
-<img src="..//>
+<img src="../.picture/ys-execve-출력화면.png"/>
