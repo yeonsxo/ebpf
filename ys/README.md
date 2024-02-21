@@ -13,7 +13,7 @@
 
 
 ## Filesystem Monitor 출력 화면
-<img src="../.picture/ys-open-close-출력화면.png" height=700 />
+<img src="../.picture/ys-open-close-출력화면.png" height=500 />
 
 
 
