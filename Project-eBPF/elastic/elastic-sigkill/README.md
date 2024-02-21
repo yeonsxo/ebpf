@@ -6,8 +6,9 @@ elastic/ebpf eBPF 프로그램에서 SigKill 호출 테스트를 위해 코드�
 
 ## 개발 과정
 
+<img src="../../../.picture/elastic-sigkill-개발과정.png" />
 
 
 ## 테스트
 
-<img src="../../../.picture/elastic-sigkill-출력화면.png"/>
+<img src="../../../.picture/elastic-sigkill-출력화면.png" />
