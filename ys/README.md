@@ -1,7 +1,7 @@
 간단한 eBPF 프로그램을 작성했다. C를 이용했다.
 
 
-# FileSystem Monitor
+# Filesystem Monitor
 <img src="../.picture/ys-open-close-출력화면.png"/>
 
 
