@@ -12,4 +12,9 @@
 
 
 ## 두 프로그램 실행 후 확인
+
+```
+$ sudo bpftool prog list
+```
+
 <img src="../.picture/ys-bpftool-prog-list-출력화면.png"/>
