@@ -9,3 +9,5 @@ elastic/ebpf 에는 File, Process, Network 관련해 추적하는 eBPF 프로그
 <img src="../../.picture/elastic--net-conn-attempt-출력화면.PNG" />
 
 <img src="../../.picture/elastic--process-exec-출력화면.PNG" />
+
+<img src="../../.picture/elastic-file-rename-출력화면.PNG" />
