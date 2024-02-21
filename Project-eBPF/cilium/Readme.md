@@ -3,7 +3,7 @@
 cilium 에서 제공하는 eBPF 프로그램의 예제에는,
 
 >Kprobe : 임의의 커널 함수의 진입 또는 종료에 프로그램을 연결한다.
->> bpf2go를 사용한 Kprobe 예제
+>> -> bpf2go를 사용한 Kprobe 예제
 >
 >Kprobepin - Kprobe 예제에서 고정된 맵을 재사용한다.
 >
