@@ -12,7 +12,7 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 ```
 $ rm -rf test
 ```
-위 명령 실행 시,
+위 명령 실행 시, (lsmtrace의 원래 코드를 이용하려면 사진에서와 같이 입력해야 한다.)
 
 
 <img src="../../../.picture/lsmtrace-eperm-출력화면.png" />
