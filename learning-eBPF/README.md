@@ -30,20 +30,20 @@
     - CO-RE, BTF에 대한 설명과 eBPF 프로그램을 로드하고 관리하기 위한 C 기반 라이브러리인 libbpf에 대한 설명과 libbpf를 기반으로 한 C 예제 코드들이 있다.
 
     chapter6 : The eBPF Verifier
-    - 흐흐
+    - eBPF 프로그램이 커널에서 안전하게 돌아가는지 확인하는 검증기가 잘 돌아가는지 예제 코드를 약간 수정하여 검증기 오류들을 확인해본다.
 
     chapter7 : eBPF Program and Attachment Types
-    - 희희
+    - eBPF의 다양한 attachment와 eBPF 프로그램의 예제들이 있다.
 
     chapter8 : eBPF for Networking
-    - 히히
+    - 네트워크 스택의 다양한 지점에 부착되는 eBPF 프로그램 예제들이 있다. (XDP 프로그램, TC 서브시스템, Kubernetes Networking 등을 소개한다.)
 
     chapter9 : eBPF for Security
-    - 헤헤
+    - 
 
     chapter10 : eBPF Programming
-    - 호호
+    - 
 
     chapter11 : The Future Evolution of eBPF
-    - 희희
+    - eBPF의 앞으로의 발전에 대해 소개한다.
 
