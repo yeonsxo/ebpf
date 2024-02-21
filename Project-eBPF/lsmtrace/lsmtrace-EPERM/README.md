@@ -7,3 +7,4 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 
 
 
+<img src="../../../.picture/lsmtrace-eperm-출력화면.png" />
