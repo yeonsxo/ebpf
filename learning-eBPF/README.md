@@ -14,36 +14,36 @@
 
 ##### 위 교재를 참고하여 eBPF를 접했다. chapter별로 간략하게 소개를 하자면,
 
-    <p>######chapter1 : What Is eBPF, and Why Is It Important?</p>
+    Chapter1 : What Is eBPF, and Why Is It Important?
     - eBPF가 무엇인지, 어떻게 구성되어 있는지와 eBPF의 발전, 특징들을 설명한다.
 
-    chapter2 : eBPF’s “Hello World”
+    Chapter2 : eBPF’s “Hello World”
     - C언어와 python을 통해 eBPF 프로그램의 간단한 예제를 작성한다.
 
-    chapter3 : Anatomy of an eBPF Program
+    Chapter3 : Anatomy of an eBPF Program
     - C언어로 작성되어 있는 XDP 예제를 통해 소스 코드가 어떻게 eBPF bytecode로 변환되는지 살펴본다.
 
-    chapter4 : The bpf() System Call
+    Chapter4 : The bpf() System Call
     - eBPF를 사용할 때 system call 수준에서 무엇이 일어나는지 설명하기 위한 BCC framework를 이용한 예제들이 있다.
 
-    chapter5 : CO-RE, BTF, and Libbpf
+    Chapter5 : CO-RE, BTF, and Libbpf
     - CO-RE, BTF에 대한 설명과 eBPF 프로그램을 로드하고 관리하기 위한 C 기반 라이브러리인 libbpf에 대한 설명과 libbpf를 기반으로 한 C 예제 코드들이 있다.
 
-    chapter6 : The eBPF Verifier
+    Chapter6 : The eBPF Verifier
     - eBPF 프로그램이 커널에서 안전하게 돌아가는지 확인하는 검증기가 잘 돌아가는지 예제 코드를 약간 수정하여 검증기 오류들을 확인해본다.
 
-    chapter7 : eBPF Program and Attachment Types
+    Chapter7 : eBPF Program and Attachment Types
     - eBPF의 다양한 attachment와 eBPF 프로그램의 예제들이 있다.
 
-    chapter8 : eBPF for Networking
+    Chapter8 : eBPF for Networking
     - 네트워크 스택의 다양한 지점에 부착되는 eBPF 프로그램 예제들이 있다. (XDP 프로그램, TC 서브시스템, Kubernetes Networking 등을 소개한다.)
 
-    chapter9 : eBPF for Security
+    Chapter9 : eBPF for Security
     - 
 
-    chapter10 : eBPF Programming
+    Chapter10 : eBPF Programming
     - 
 
-    chapter11 : The Future Evolution of eBPF
+    Chapter11 : The Future Evolution of eBPF
     - eBPF의 앞으로의 발전에 대해 소개한다.
 
