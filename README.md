@@ -20,6 +20,7 @@ eBPF bytecode는 Kernel Level에서 동작하므로 system 전체에 영향을 �
 
 eBPF 프로그램은 이벤트가 발생되었을 때, 그 이벤트 처리를 위해 연결된다.
 > 이벤트 타입에는 Kprobe, tracepoint, 네트워크, LSM 등이 있다.
+
 <br></br>
 또한 BTF는 데이터 구조, 코드의 메모리 배치 및 디버깅 정보를 설명하는데, bpftool btf dump id <id> 명령으로 확인할 수 있다.
 
