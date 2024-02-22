@@ -21,6 +21,8 @@ eBPF bytecode는 Kernel Level에서 동작하므로 system 전체에 영향을 �
 eBPF 프로그램은 이벤트가 발생되었을 때, 그 이벤트 처리를 위해 연결된다.
 > 이벤트 타입에는 Kprobe, tracepoint, 네트워크, socket, LSM 등이 있다.
 
+이벤트가 발생되면 훅에서 eBPF 프로그램으로 컨텍스트(context)를 전달한다. 이 ctx의 데이터 구조는 eBPF 프로그램별로 상이하다.
+
 <br></br>
 또한 BTF는 데이터 구조, 코드의 메모리 배치 및 디버깅 정보를 설명하는데, Linux 커널에서 BTF 정보 활성화 여부는 CONFIG_DEBUG_INFO_BTF=y 를 확인하면 알 수 있다.
 
