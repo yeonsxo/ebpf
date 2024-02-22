@@ -3,12 +3,14 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 > (lsmtrace.bpf.c 코드 내에서 rmdir 부분에 코드를 추가하였다.)
 
 
+# 개요
 
 특정 디렉토리를 rmdir(remove directory) 명령으로 지우려 할 때, permission denied가 뜰 수 있게 lsmtrace.bpf.c 코드를 수정했다.
 > 특정 디렉토리를 지정해줄 때는, inode값을 이용하는 방법 하나와 directory 이름을 이용하는 방법 하나로 두가지 방법을 이용했다.
 
+<br></br>
 
-## 개발 과정
+# 개발 과정
 
 첫 번째로, inode값을 이용해 return EPERM을 하는 과정이다.
 
@@ -33,7 +35,9 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 
 해당 디렉토리의 path를 특정한 후, 현재의 path와 비교하여 현재 path가 test 라면 return EPERM을 하도록 코드에 추가해주었다.
 
-## 테스트
+<br></br>
+
+# 테스트
 
 /home/shinys/test 디렉토리를 지우는 것으로 테스트를 진행했다.
 ```
