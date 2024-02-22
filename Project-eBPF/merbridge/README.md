@@ -1,6 +1,6 @@
 # merbridge
 
-merbridge는 eBPF 프로그램을 통해 네트워킹에서의 연결을 리다이렉션 및 포워딩하여 envoy를 거쳤다가 
+merbridge는 eBPF 프로그램을 통해 네트워킹 내 연결을 리다이렉션하여 envoy로의 연결로 바뀌도록 도와주고, iptable에서 했던 중복되는 작업들을 최소화하는 등의 기능을 한다.
 
 <img src="../../.picture/merbridge.png" />
 
