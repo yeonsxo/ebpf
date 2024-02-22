@@ -14,7 +14,7 @@ eBPF는 Extended Berkeley Packet Filters로, 패킷 필터인 BPF 프로그램�
 <br></br>
 
 eBPF 프로그램은 이벤트가 발생되었을 때, 그 이벤트 처리를 위해 연결된다.
-> 이벤트 타입에는 Kprobe, tracepoint, 네트워크, socket, LSM 등이 있다.
+> 훅 타입에는 Kprobe, tracepoint, 네트워크, socket, LSM 등이 있다.
 
 이벤트가 발생되면 훅에서 eBPF 프로그램으로 컨텍스트(context)를 전달한다. 이 ctx의 데이터 구조는 eBPF 프로그램별로 상이하다.
 
