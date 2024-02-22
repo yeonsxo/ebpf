@@ -88,7 +88,7 @@ libbpf와 마찬가지로 eBPF프로그램을 작성할 때 필요한 tool이다
 
 <br></br>
 
-### etc (Ubuntu 기준)
+## etc (Ubuntu 기준)
 ```bash
 $ sudo apt-get update
 $ sudo apt-get install -y apt-transport-https ca-certificates curl clang llvm jq
