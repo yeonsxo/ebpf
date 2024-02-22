@@ -10,6 +10,8 @@ eBPF 프로그램과 사용자 공간 프로그램 모두 C로 작성되어 있�
 
 <img src="../../.picture/elastic-man.PNG" />
 
+<br></br>
+
 몇 가지 출력값을 살펴보자.
 
 ```
