@@ -38,7 +38,7 @@ $ sudo bpftool btf dump file /sys/kernel/btf/vmlinux format raw > vmlinux.h
 
 <img src="./.picture/그림2.png" /> *[그림 2]*
 
-[그림 2]를 참고해보자. eBPF 프로그램은 C 또는 Rust를 이용해 소스 코드를 작성하게 되고(최근에는 go로도 작성되는 것 같다), LLVM 이나 Clang을 이용해 bytecode로 compile된다.
+[그림 2]를 참고해보자. eBPF 프로그램은 C 또는 Rust를 이용해 소스 코드를 작성하게 되고, LLVM 이나 Clang을 이용해 bytecode로 compile된다.
 
 eBPF 프로그램이 bpf system call로 연결이 된다.
 
