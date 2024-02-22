@@ -6,9 +6,13 @@ Lsmtrace는 eBPF 프로그램과 사용자 공간 프로그램 모두 C로 작�
 
 lsmtrace를 사용하려면
 > BPF_SYSCALL
+>
 > BPF_LSM
+>
 > DEBUG_INFO
+>
 > DEBUG_INFO_BTF
+
 위의 내용이 활성화 되어 있어야 한다.
 
 <br></br>
