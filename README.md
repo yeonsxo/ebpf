@@ -30,7 +30,7 @@ eBPF 프로그램은 이벤트가 발생되었을 때, 그 이벤트 처리를 �
 
 ## 구조 및 기능
 
-<img src="./.picture/그림3.png" /> [그림 3]
+<img src="./.picture/그림3.png" /> *[그림 3]*
 
 앞서 상술한 바와 같이 eBPF 프로그램의 attachment에는 kprobes, tracepoints, raw tracepoint, fentry/fexit probes 등이 있다.
 
@@ -52,7 +52,7 @@ eBPF 프로그램은 Linux Security Module(LSM) API에도 연결된다. LSM은 �
 eBPF 프로그램에서의 반환 코드를 사용하여 커널에게 네트워크 패킷을 처리할 방법(평소처럼 처리, 삭제, redirection 등)을 알려준다. 또, eBPF프로그램이 네트워크 패킷, 소켓 구성 매개변수 등을 수정할 수 있도록 한다.
 
 
-<img src="./.picture/그림4.png" /> [그림 4]
+<img src="./.picture/그림4.png" /> *[그림 4]*
 
 [그림 4]를 참고해보면, eBPF 프로그램이 Kprobes에 부착할 수 있는 기능이 추가되며 동시에 커널 네트워킹 스택 내에 훅이 추가되어 eBPF 프로그램이 네트워킹 기능의 다양한 측면도 처리할 수 있게 되었다.
 
