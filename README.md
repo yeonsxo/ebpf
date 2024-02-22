@@ -128,4 +128,5 @@ $ sudo apt-get install -y python3-pip
 >
 >> BPF_MAP_TYPE_PERCPU_ARRAY 맵은 기본적인 BPF_MAP_TYPE_ARRAY 맵과 달리 각 CPU 코어에 대해 별도의 메모리 공간을 가지고 있어 각 CPU는 자체 메모리를 사용하여 독립적으로 값을 읽거나 쓸 수 있다. 따라서 eBPF 프로그램은 512 바이트 제한을 초과하지 않고도 큰 변수를 다룰 수 있다.
 
+
 - BPF helper function 에 대한 정보는 https://man7.org/linux/man-pages/man7/bpf-helpers.7.html 을 참고한다.
