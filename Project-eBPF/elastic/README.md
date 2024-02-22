@@ -1,6 +1,6 @@
 # elastic-eBPF
 
-elastic/ebpf 에는 File, Process, Network 관련해 추적하는 eBPF 프로그램들이 있다.
+elastic/ebpf 에는 File, Process, Network 관련을 추적하는 eBPF 프로그램들이 있다.
 
 eBPF 프로그램과 사용자 공간 프로그램 모두 C로 작성되어 있다.
 
