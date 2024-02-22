@@ -3,7 +3,7 @@
 eBPF는 Extended Berkeley Packet Filters로, 패킷 필터인 BPF 프로그램이 확장된 것이다. BPF는 Unix계열 OS의 Kernel Level에서 Bytecode에 따라 동작하는 경량화된 VM으로, eBPF를 사용하면 프로그램이 커널 수준에서 발생하는 모든 것을 관찰하고 이벤트를 고속으로 처리할 수 있으므로 보안에 적절하게 사용된다.
 
 
-기존 BPF와의 차이점은 eBPF 맵을 이용해 사용자 공간 app과 BPF 프로그램이 데이터를 공유할 수 있고, 더 많은 종류의 bpf helper function과 bpf() 시스템 호출을 활용하여 프로그램을 구성할 수 있으며, ebpf verifier가 추가되어 프로그램이 더 안전하게 실행될 수 있도록 보장한다.
+기존 BPF와의 차이점은 eBPF 맵을 이용해 사용자 공간 app과 BPF 프로그램이 데이터를 공유할 수 있고, 더 많은 종류의 bpf helper function과 bpf() 시스템 호출을 활용하여 프로그램을 구성할 수 있으며, ebpf 검증기(verifier)가 추가되어 프로그램이 더 안전하게 실행될 수 있도록 보장한다.
 
 
 <img src="./.picture/그림1.png" />  [그림 1]
@@ -18,14 +18,20 @@ eBPF는 Extended Berkeley Packet Filters로, 패킷 필터인 BPF 프로그램�
 eBPF bytecode는 Kernel Level에서 동작하므로 system 전체에 영향을 줄 수 있는 위험한 상황을 방지하기 위해 Verifier로 이상이 없는지 검사를 진행한다. 그 후, JIT Compiler를 통해 native code로 변환되어 Kernel에서 동작한다.
 
 
-BTF 
+eBPF 프로그램은 이벤트가 발생되었을 때, 그 이벤트 처리를 위해 연결된다.
+> 이벤트 타입에는 Kprobe, tracepoint, 네트워크, LSM 등이 있다.
+<br></br>
+또한 BTF는 데이터 구조, 코드의 메모리 배치 및 디버깅 정보를 설명하는데, bpftool btf dump id <id> 명령으로 확인할 수 있다.
+
+컴파일 하는 과정에서 -g 플래그를 통해 생성되고, BTF가 있으면 eBPF 맵 생성 및 프로그램 load/attach를 위한 skel 코드 생성이 가능하다.
+
 
 
 ## 구조 및 기능
 
 <img src="./.picture/그림3.png" /> [그림 3]
 
-eBPF 프로그램의 attachment에는 kprobes, tracepoints, raw tracepoint, fentry/fexit probes 등이 있다.
+앞서 상술한 바와 같이 eBPF 프로그램의 attachment에는 kprobes, tracepoints, raw tracepoint, fentry/fexit probes 등이 있다.
 
 예를 들면, execve() system call 진입 지점에 부착된 kprobe, do_execve() kernel 함수에 부착된 Kprobe, execve() system call 진입 지점에 위치한 tracepoint 등에 eBPF 프로그램이 연결 된다.
 
