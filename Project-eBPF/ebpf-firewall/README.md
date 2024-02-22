@@ -5,7 +5,7 @@ eBPF를 활용한 간단한 방화벽으로, eBPF 프로그램이 root Cgroup에
 
 
 
-### Build (Ubuntu 기준)
+## Build (Ubuntu 기준)
 
 ```
 $ sudo apt-get install -y clang llvm golang make
