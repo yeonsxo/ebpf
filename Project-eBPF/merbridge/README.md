@@ -2,7 +2,7 @@
 
 merbridge는 eBPF 프로그램을 통해 네트워킹에서의 연결을 리다이렉션 및 포워딩하여 envoy를 거쳤다가 
 
-<img src="../../.picture/envoy.png" />
+<img src="../../.picture/merbridge.png" />
 
 eBPF 프로그램은 C로, 사용자 공간 프로그램은 go로 작성되어있다.
 
