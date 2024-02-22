@@ -12,13 +12,6 @@ eBPF는 Extended Berkeley Packet Filters로, 패킷 필터인 BPF 프로그램�
 
 <br></br>
 
-<img src="./.picture/그림2.png" /> *[그림 2]*
-
-[그림 2]를 참고해보자. eBPF 프로그램은 C 또는 Rust를 이용해 소스 코드를 작성하게 되고(최근에는 go로도 작성되는 것 같다), LLVM 이나 Clang을 이용해 bytecode로 compile된다.
-
-eBPF bytecode는 Kernel Level에서 동작하므로 system 전체에 영향을 줄 수 있는 위험한 상황을 방지하기 위해 Verifier로 이상이 없는지 검사를 진행한다. 그 후, JIT Compiler를 통해 native code로 변환되어 Kernel에서 동작한다.
-
-
 eBPF 프로그램은 이벤트가 발생되었을 때, 그 이벤트 처리를 위해 연결된다.
 > 이벤트 타입에는 Kprobe, tracepoint, 네트워크, socket, LSM 등이 있다.
 
@@ -40,6 +33,14 @@ $ sudo bpftool btf dump file /sys/kernel/btf/vmlinux format raw > vmlinux.h
 <br></br>
 
 ## 구조 및 기능
+
+<img src="./.picture/그림2.png" /> *[그림 2]*
+
+[그림 2]를 참고해보자. eBPF 프로그램은 C 또는 Rust를 이용해 소스 코드를 작성하게 되고(최근에는 go로도 작성되는 것 같다), LLVM 이나 Clang을 이용해 bytecode로 compile된다.
+
+eBPF bytecode는 Kernel Level에서 동작하므로 system 전체에 영향을 줄 수 있는 위험한 상황을 방지하기 위해 Verifier로 이상이 없는지 검사를 진행한다. 그 후, JIT Compiler를 통해 native code로 변환되어 Kernel에서 동작한다.
+
+<br></br>
 
 <img src="./.picture/그림3.png" /> *[그림 3]*
 
