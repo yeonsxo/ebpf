@@ -28,6 +28,12 @@ eBPF 프로그램 내에서 BTF 정보를 확인할 땐 bpftool btf dump id <id>
 
 vmlinux.h 헤더 파일을 포함해야 하고, clang/llvm 컴파일 할 때 -g 플래그를 포함하면 생성된다. BTF가 있으면 eBPF 맵 생성 및 프로그램 load/attach를 위한 skel 코드 생성이 가능하다.
 
+vmlinux.h 는
+```
+$ sudo bpftool btf dump file /sys/kernel/btf/vmlinux format raw > vmlinux.h
+```
+명령으로 생성한다.
+
 
 
 ## 구조 및 기능
