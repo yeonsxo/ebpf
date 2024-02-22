@@ -16,7 +16,7 @@ merbridge github에서는 Kubernetes를 이용한 환경으로 실행하였지�
 
 <br></br>
 
-# build
+# build & Run
 
 Local 환경에 envoy를 설치한다.
 
@@ -24,8 +24,7 @@ Local 환경에 envoy를 설치한다.
 
 envoy version 1.18.2를 사용했다.
 
-그 후, envoy를 실행시킨다.
-
+`envoy -c envoy-demo.yaml` 명령으로 envoy를 실행시킬 수 있다.
 
 
 eBPF 프로그램 맵 생성 및 프로그램 load : 
