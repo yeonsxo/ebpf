@@ -24,5 +24,24 @@ $ sudo mount -t cgroup2 none /mnt/cgroup2
 
 ## Run
 
+eBPF 프로그램 load :
+```
+$ sudo ./ebpf-fw load
+```
+
+ebpf 프로그램 unload :
+```
+$ sudo ./ebpf-fw unload
+```
+
+특정 IP를 1.2.3.4 라고 했을 때, block the IP :
+```
+$ sudo ./ebpf-fw block 1.2.3.4
+```
+
+unblock the IP :
+```
+$ sudo ./ebpf-fw unblock 1.2.3.4
+```
 
 
