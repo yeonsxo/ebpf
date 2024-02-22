@@ -22,8 +22,9 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 
 두 화면에서 해당 디렉토리의 inode값을 특정할 수 있다. 이 inode값을 이용하여 코드에 추가해주었다.
 
+<br></br>
 
-두 번째로, path를 이용해 return EPERM을 하는 과정이다.
+**두 번째로, path를 이용해 return EPERM을 하는 과정이다.**
 
 <img src="../../../.picture/lsmtrace-eperm-개발과정2.png" height=200/>
 
