@@ -37,7 +37,7 @@ lumontec/lsmtrace eBPF 프로그램에서 EPERM return test를 하기 위해 원
 
 # 테스트
 
-/home/shinys/test 디렉토리를 지우는 것으로 테스트를 진행했다.
+/home/shinys/test 를 특정 디렉토리로 정하고, 이 디렉토리를 지우는 것으로 테스트를 진행했다.
 ```
 $ rm -rf test
 ```
