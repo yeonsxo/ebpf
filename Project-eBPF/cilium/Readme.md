@@ -1,6 +1,6 @@
 # Cilium
 
-cilium 에서 제공하는 eBPF 프로그램의 예제에는,
+cilium 에서 제공하는 eBPF 프로그램의 예제에는, attachment 별로 프로그램이 작성되어 있다.
 
 - Kprobe : 임의의 커널 함수의 진입 또는 종료에 eBPF 프로그램을 연결한다.
 > -> bpf2go를 사용한 Kprobe 예제
