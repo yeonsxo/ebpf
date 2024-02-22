@@ -4,7 +4,7 @@ LSM은 Linux Security Module로, 리눅스 커널에서 제공하는 보안 Fram
 
 Lsmtrace는 eBPF 프로그램과 사용자 공간 프로그램 모두 C로 작성되어 있고, lsm 훅에서 eBPF 프로그램을 통해 추적한다.
 
-lsmtrace를 사용하려면
+Lsmtrace를 사용하려면
 > BPF_SYSCALL
 >
 > BPF_LSM
